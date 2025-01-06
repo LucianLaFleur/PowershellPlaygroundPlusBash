@@ -31,3 +31,15 @@ OVERVIEW: meant to be classroom-lessons breaking down ideas into participation-r
    <br/> -  show switch cases, and explain differences for why we need the array or why we don't.
    <br/> -  use the Write-Output messages to show where logic is being executed in conditional processing
  <br/>  !NOTE: for classroom use, should have a commented line that will likely trigger repeat items, so that we can see the do-while loop shuffling for a different instrument if they hit the same; currently, this is not very likely.
+
+<h1> 3_dependentArrays python paradigmn selection </h1> <br/>
+ <br/> NOTE: written in python because of fast prototyping, powershell is not efficient for larger deals when I'm already familiar with other tools; good opportunity to show python and similarities... 
+<br/> The goal is to get a string of keywords including a style, 2 non-repeating instruments, a mood, a technique, and a tempo. 
+<br/> we want this organization so we can make styles, instruments, moods that apply to one paradigmn, but not necissarily another (ex. It makes sense to have a trumpet in Electro Swing, but not in 80's rock and roll; the generation program I'm plugging keywords into will not make things correctly if it gets keywords that don't make sense with the source data the tensors were trained on, so fusion-ability is limited). We can get around this limitation by grouping sensible styles and instruments together. 
+</br> also, not all moods make sense. Like "aggressive lounge music" is kinda insane, and "reflective hip hop" is weird too. Thus we control these 3 categories, [styles, instruments, moods] for each paradigmn listed in a Paradigmn Arr at the top.
+<br/>  --- explaining some key functions and logic
+ <br/> function  get_info_set() : uses the keywords from the paradigmn array. While these are simple conditionals, it directs the program to understand which sets of data should be handled based on whatever keyword is triggered
+ <br/> the function get_sub_arr_items() :  manages the randomization and printing the output that we want
+ <br/> the main function While True, will ask for user input, allowing for key-letters to trigger manual selection of a paradigm, and randomize output words. A full random option "r" is allowed, which first selects a random item from the Paradigm Arr, then selects items from the sub arrays thereafter.
+ <br/> some print statements are added to allow for better visual "barriers" to make the output more readable.
+  <br/> has "continue" functionaliy to make more generations and repeat the loop. As a formality, has an exit option to end the program and leave the loop
