@@ -6,7 +6,7 @@ Included projects
     These are mostly the same, except for adding more words to the ps1 version. It's not perfect in making grammatical strings, and is more of a concept thing than a functional program. Demonstrates how to use conditionals in interesting ways
   -  musicGetter
       First iteration of a music-keyword generator, focusing on instrument-classes
-      (from my commented code notes:
+      (from my commented code notes):
        - word 1 = lead instrument, always
        - word 2 = lead instrument or secondary insturment
        - words 3 & 4 = each have 50% chance to be either mood or style.
