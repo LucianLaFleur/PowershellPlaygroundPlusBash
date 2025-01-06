@@ -7,11 +7,11 @@ Included projects
   -  musicGetter
       First iteration of a music-keyword generator, focusing on instrument-classes
       (from my commented code notes:
-      # word 1 = lead instrument, always
-      # word 2 = lead instrument or secondary insturment
-      # words 3 & 4 = each have 50% chance to be either mood or style.
-      # word 5 = 60% chance for a technical
-      # word 6 = always a wild item
+       word 1 = lead instrument, always
+       word 2 = lead instrument or secondary insturment
+       words 3 & 4 = each have 50% chance to be either mood or style.
+       word 5 = 60% chance for a technical
+       word 6 = always a wild item
      The associated arrays for each class of word are easy to add o 
 
 Project set 1 *Dependent Arrays*
