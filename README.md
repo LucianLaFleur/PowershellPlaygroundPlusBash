@@ -1,5 +1,4 @@
-PowershellPlaygroundPlusBash
-mostly powershell silly scripts, learning the language but documenting projects
+mostly powershell scripts, while learning the language but documenting projects along the way
 
 Included projects
 <h1> horror word randomizer </h1>(in .bash and .ps1) <br/>
